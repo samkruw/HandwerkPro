@@ -1452,14 +1452,15 @@ function _onFirebaseReady() {
   // ════════════════════════════════════════════════════════════════
   //  FIREBASE CONFIG – Werte aus Firebase Console eintragen
   // ════════════════════════════════════════════════════════════════
-  var FB = {
-    apiKey:            "DEIN_API_KEY",
-    authDomain:        "DEIN_PROJECT_ID.firebaseapp.com",
-    projectId:         "DEIN_PROJECT_ID",
-    storageBucket:     "DEIN_PROJECT_ID.firebasestorage.app",
-    messagingSenderId: "DEINE_SENDER_ID",
-    appId:             "DEINE_APP_ID"
-  };
+  const firebaseConfig = {
+  apiKey: "AIzaSyAOOtHxJkTnNhOeS0TTMFl-kl5wYu372co",
+  authDomain: "handwerkpro-73fad.firebaseapp.com",
+  projectId: "handwerkpro-73fad",
+  storageBucket: "handwerkpro-73fad.firebasestorage.app",
+  messagingSenderId: "310167121690",
+  appId: "1:310167121690:web:0fc9702f0e4061d509c6a3",
+  measurementId: "G-12S56YME7Z"
+};
   // ════════════════════════════════════════════════════════════════
   firebase.initializeApp(FB);
   window.db   = firebase.firestore();
